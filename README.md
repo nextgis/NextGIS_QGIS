@@ -70,3 +70,7 @@ repository, and then issue a pull request. The development team can then
 review your contribution and commit it upstream as appropriate. See
 http://help.github.com/forking/ and http://help.github.com/pull-requests/
 for more details.
+
+License
+-------------
+This program is licensed under GNU GPL v2

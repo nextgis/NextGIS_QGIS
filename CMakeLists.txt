@@ -1,7 +1,7 @@
 #############################################################
 # NextGIS QGIS settings
 SET(NGQ_VERSION_MAJOR "16")
-SET(NGQ_VERSION_MINOR "3")
+SET(NGQ_VERSION_MINOR "8")
 SET(NGQ_VERSION_PATCH "1")
 SET(NGQ_VERSION ${NGQ_VERSION_MAJOR}.${NGQ_VERSION_MINOR}.${NGQ_VERSION_PATCH})
 

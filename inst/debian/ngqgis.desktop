@@ -2,10 +2,10 @@
 Version=2.3
 Type=Application
 Name=NextGIS QGIS
-Exec=ngqgis
+Exec=ngqgis %U
 Icon=/usr/share/ngqgis/images/icons/qgis-icon.png
 Terminal=false
 X-MultipleArgs=false
 Categories=GIS;Science;
 StartupNotify=true
-MimeType=application/x-formbuilder;
+MimeType=application/x-qgis-project;

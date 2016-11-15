@@ -63,7 +63,7 @@ QgsWelcomePage::QgsWelcomePage( bool skipVersionCheck, QWidget* parent )
   if ( !QgsApplication::isRunningFromBuildDir() && settings.value( "/qgis/checkVersion", true ).toBool() && !skipVersionCheck )
   {
     connect( mVersionInfo, SIGNAL( versionInfoAvailable() ), this, SLOT( versionInfoReceived() ) );
-    mVersionInfo->checkVersion();
+    //mVersionInfo->checkVersion();
   }
 
   connect( recentProjectsListView, SIGNAL( activated( QModelIndex ) ), this, SLOT( itemActivated( QModelIndex ) ) );

@@ -587,6 +587,7 @@ QgisApp::QgisApp( QSplashScreen *splash, const QString& myTranslationCode, bool 
   // load GUI: actions, menus, toolbars
   setupUi( this );
 
+  mActionCheckQgisVersion->setVisible(false);
   //////////
 
   mSplash->showMessage( tr( "Checking database" ), Qt::AlignHCenter | Qt::AlignBottom );
@@ -1605,7 +1606,7 @@ void QgisApp::createActions()
   connect( mActionReportaBug, SIGNAL( triggered() ), this, SLOT( reportaBug() ) );
   connect( mActionNeedSupport, SIGNAL( triggered() ), this, SLOT( supportProviders() ) );
   connect( mActionQgisHomePage, SIGNAL( triggered() ), this, SLOT( helpQgisHomePage() ) );
-  connect( mActionCheckQgisVersion, SIGNAL( triggered() ), this, SLOT( checkQgisVersion() ) );
+//  connect( mActionCheckQgisVersion, SIGNAL( triggered() ), this, SLOT( checkQgisVersion() ) );
   connect( mActionAbout, SIGNAL( triggered() ), this, SLOT( about() ) );
   connect( mActionSponsors, SIGNAL( triggered() ), this, SLOT( sponsors() ) );
 
@@ -2317,7 +2318,7 @@ void QgisApp::setTheme( const QString& theThemeName )
   mActionProjectProperties->setIcon( QgsApplication::getThemeIcon( "/mActionProjectProperties.png" ) );
   mActionManagePlugins->setIcon( QgsApplication::getThemeIcon( "/mActionShowPluginManager.svg" ) );
   mActionShowPythonDialog->setIcon( QgsApplication::getThemeIcon( "console/iconRunConsole.png" ) );
-  mActionCheckQgisVersion->setIcon( QgsApplication::getThemeIcon( "/mActionCheckQgisVersion.png" ) );
+  // mActionCheckQgisVersion->setIcon( QgsApplication::getThemeIcon( "/mActionCheckQgisVersion.png" ) );
   mActionOptions->setIcon( QgsApplication::getThemeIcon( "/mActionOptions.svg" ) );
   mActionConfigureShortcuts->setIcon( QgsApplication::getThemeIcon( "/mActionOptions.svg" ) );
   mActionCustomization->setIcon( QgsApplication::getThemeIcon( "/mActionOptions.svg" ) );

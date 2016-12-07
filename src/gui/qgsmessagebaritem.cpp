@@ -234,6 +234,7 @@ QgsMessageBarItem *QgsMessageBarItem::setWidget( QWidget *widget )
 QgsMessageBarItem* QgsMessageBarItem::setIcon( const QIcon &icon )
 {
   mUserIcon = icon;
+  writeContent();
   return this;
 }
 

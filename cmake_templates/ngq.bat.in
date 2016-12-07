@@ -3,6 +3,7 @@ cd /d %~dp0\..
 set NGQ_ROOT=%~dp0\..
 set QT_PLUGIN_PATH=bin\plugins
 set QT_RASTER_CLIP_LIMIT=4096
+set GDAL_DATA=%NGQ_ROOT%\share\gdal
 set PYTHONHOME=%NGQ_ROOT%\lib\Python27
 set PYTHONPATH=%NGQ_ROOT%\lib\Python27\site-packages;%PYTHONPATH%
 
